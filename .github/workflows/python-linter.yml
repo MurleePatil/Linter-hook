@@ -27,3 +27,7 @@ jobs:
       - name: Run pylint
         run: |
           pylint **/*.py  # Run pylint on all Python files in the repository
+          if [ $? -ne 0 ]; then
+            echo "Linter errors detected! Please fix the issues before pushing again."
+            exit 1
+          fi
