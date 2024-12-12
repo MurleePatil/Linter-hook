@@ -1,4 +1,5 @@
 import os  # Unused import to trigger a warning
+import sys
 
 def is_palindrome(s):
     # Remove spaces and convert to lowercase for uniformity
